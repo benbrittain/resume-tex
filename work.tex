@@ -1,54 +1,86 @@
 \cvsection{Work Experience}
 
-\begin{cventries}
-  \cventry
-    {Senior Software Engineer}
-    {Google}
-    {New York, New York}
-    {Oct 2019 - Mar 2022}
-    {
-      \begin{cvitems}
-      \end{cvitems}
-    }
 
-  \cventry
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{15pt} \item[-] #1}
+}
+
+\begin{cventries}
+
+  \cventrytwopositions
     {Software Engineer}
     {Google}
-    {San Francisco, California}
-    {Jan 2018 - Oct 2019}
+    {San Francisco, CA / New York, NY}
+    {Jan 2018 - Mar 2020}
     {
       \begin{cvitems}
+        \item {Fuchsia Connectivity team member working on subsystems for a new Object Capability based non-POSIX OS}
+          \SubItem {Tech lead for the telephony subsystem}
+          \SubItem {Bluetooth team member}
+        \item {Fuchsia Driver Framework improvements with a focus on implementation correctness }
+        \item {Added native Rust support to the GN build system (>20\% build speed improvement)}
+        \item {Contributed heavily to platform-specific core Rust libraries and onboarding of new users}
+        \item {Prototyped using Wasmtime \& WebAssembly as a secure runtime for Fuchsia}
+      \end{cvitems}
+    }
+    {Senior Software Engineer}
+    {Mar 2020 - Mar 2022}
+    {
+      \begin{cvitems}
+        \item {Led a geographically distributed team working on a new hypervisor implementation for Google Cloud}
+        \item {Advised on Rust Language policy for the company-wide monorepo (Google3)}
+        \item {Organized social events to encourge wider team camaraderie during work-from-home }
       \end{cvitems}
     }
 
   \cventry
     {Backend Software Engineer}
     {OkCupid}
-    {New York, New York}
+    {New York, NY}
     {May 2016 - Jun 2017}
     {
       \begin{cvitems}
+        \item {Managed a colocated data center migration}
+        \item {Wrote Rust service integrations for the in-house webserver (OKWS)}
+        \item {Advocated for and prototyped containerizing and deploying using kubernetes}
+        \item {Rewrote the Make based C++ build system to increase speed and ensure deterministic builds}
+        \item {Migrated an in-house distributed cache layer to Redis for performance and maintanability reasons}
       \end{cvitems}
     }
 
   \cventry
     {Software Engineer}
     {Ginkgo Bioworks}
-    {Boston, Massachusets}
+    {Boston, MA}
     {Sep 2014 - May 2015}
     {
       \begin{cvitems}
+        \item {Robotic platform integrations}
+        \item {Maintained a large Ruby/Rails codebase}
+        \item {Wrote tools to help biologists manage and analyze large numbers of samples}
       \end{cvitems}
     }
 
-  \cventry
+  \cventrytwopositions
     {Platform Engineering Intern}
     {Mozilla}
-    {Mountain View, California}
+    {Mountain View, CA}
+    {Jun 2013 - Sep 2013}
+    {
+      \begin{cvitems}
+        \item {Arm Assembly optimizations for Opus audio codec}
+        \item {Worked on reference implementation of Daala (precursor to AV1)}
+        \item {Contributed to the Firefox implementation of WebRTC}
+      \end{cvitems}
+    }
+    {Platform Engineering Intern}
     {Jun 2014 - Sep 2014}
     {
       \begin{cvitems}
         \item {Second internship at Mozilla}
+        \item {Implemented parts of the HTML5 WebPush standard}
+        \item {Data analysis of real-world multi-terabyte telemetry datasets}
       \end{cvitems}
     }
+
 \end{cventries}
